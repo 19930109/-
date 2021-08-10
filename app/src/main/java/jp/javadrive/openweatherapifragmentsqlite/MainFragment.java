@@ -152,7 +152,7 @@ public class MainFragment extends Fragment {
         SQLiteDatabase db = helper.getReadableDatabase();
         Cursor c = db.query(table_weather_day, new String[]{"id", "cityname", "day", "weather", "icon", "temps", "pop"}, "day=?",
                 new String[]{day7}, null, null, null, null);
-        Log.v("検索", "実行完了");
+        Log.v("検索s", "実行完了");
 
         Weather_hourOpenHelper helper2 = new Weather_hourOpenHelper(getActivity());
         SQLiteDatabase db2 = helper2.getReadableDatabase();
