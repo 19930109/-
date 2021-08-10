@@ -1,0 +1,2 @@
+rootProject.name = "OpenWeatherApiFragmentSQLite"
+include ':app'

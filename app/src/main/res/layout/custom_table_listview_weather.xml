@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <TextView
+        android:id="@+id/cityname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="3dip" />
+
+
+    <TableRow>
+
+        <TextView
+            android:text="0時"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="3dip" />
+
+        <TextView
+            android:text="3時"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="3dip" />
+
+        <TextView
+            android:text="6時"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="3dip" />
+
+        <TextView
+            android:text="9時"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="3dip" />
+
+        <TextView
+            android:text="12時"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="3dip" />
+
+        <TextView
+            android:text="15時"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="3dip" />
+
+        <TextView
+            android:text="18時"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="3dip" />
+
+        <TextView
+            android:text="21時"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="3dip" />
+
+
+    </TableRow>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:id="@id/android:list">
+    </ListView>
+
+    <GridView
+        android:id="@+id/GridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:layout_marginLeft="1dp"
+        android:numColumns="8"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp"></GridView>
+
+
+
+</TableLayout>
