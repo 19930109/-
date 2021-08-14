@@ -160,7 +160,8 @@ public class LocationMenuFragment extends Fragment  {
 
         //位置情報を取得していなければ、ダイアログを表示して、位置情報取得
         if(locality == null) {
-            ((MainActivity) getActivity()).Test();
+            //ダイアログ表示
+            ((MainActivity) getActivity()).LocationWaiting();
             // LocationClientクラスのインスタンスを生成
             fusedLocationClient = LocationServices.getFusedLocationProviderClient(this.getActivity());
         }

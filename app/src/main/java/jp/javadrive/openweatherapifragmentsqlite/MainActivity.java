@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements LocalAreaDataFrag
     }
 
 
-    public void Test() {
+    public void LocationWaiting() {
         FragmentManager fragmentManager = getSupportFragmentManager();
         MyProgressDialog pd = MyProgressDialog.newInstance();
         pd.show(fragmentManager, "Test");
