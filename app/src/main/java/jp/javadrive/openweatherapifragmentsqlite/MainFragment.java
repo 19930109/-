@@ -126,7 +126,7 @@ public class MainFragment extends Fragment {
         Calendar calendar2 = Calendar.getInstance();
         calendar2.add(Calendar.DAY_OF_MONTH, +4);//4日後
         Date date2 = calendar2.getTime();
-        calendar1.add(Calendar.DAY_OF_MONTH, +6);//7日後
+        calendar1.add(Calendar.DAY_OF_MONTH, +7);//7日後
         Date date1 = calendar1.getTime();
         calendar.add(Calendar.DAY_OF_MONTH, -84);//84日前
         Date date3 = calendar.getTime();
@@ -152,7 +152,7 @@ public class MainFragment extends Fragment {
         SQLiteDatabase db = helper.getReadableDatabase();
         Cursor c = db.query(table_weather_day, new String[]{"id", "cityname", "day", "weather", "icon", "temps", "pop"}, "day=?",
                 new String[]{day7}, null, null, null, null);
-        Log.v("検索s", "実行完了");
+        Log.v("検索", "実行完了");
 
         Weather_hourOpenHelper helper2 = new Weather_hourOpenHelper(getActivity());
         SQLiteDatabase db2 = helper2.getReadableDatabase();

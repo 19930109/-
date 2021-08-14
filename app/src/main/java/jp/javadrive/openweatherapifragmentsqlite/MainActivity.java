@@ -15,6 +15,10 @@ import androidx.fragment.app.FragmentTransaction;
 public class MainActivity extends AppCompatActivity implements LocalAreaDataFragment.OnCurrentListener,
         LocalAreaCurrentFragment.OnCurrentListener,  LocalAreaWeekFragment.OnCurrentListener{
 
+
+    //定数
+    final static public String ACTION_FINISH_UPDATING = "ACTION_ASYNC_FINISH_UPDATING";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -46,6 +50,49 @@ public class MainActivity extends AppCompatActivity implements LocalAreaDataFrag
         }
 
     }
+
+
+    public void Test() {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        MyProgressDialog pd = MyProgressDialog.newInstance();
+        pd.show(fragmentManager, "Test");
+        ThreadWait10Second task = new ThreadWait10Second();
+        task.start();   //非同期処理を開始
+    }
+
+    //プログレスダイアログを閉じる
+    public void closeDialog () {
+        //非同期処理が終わったことを通知
+        Intent intent = new Intent();
+        intent.setAction(ACTION_FINISH_UPDATING);
+        sendBroadcast(intent);
+    }
+
+    //非同期処理（インナークラス）
+    public class ThreadWait10Second extends Thread {
+
+        @Override
+        public void run() {
+            //super.run();
+            try {
+                Thread.sleep(10 * 1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            Handler handler = new Handler(Looper.getMainLooper());
+            handler.post(new Runnable() {
+                @Override
+                public void run() {
+                    //後処理
+                    closeDialog();
+                }
+            });
+        }
+    }
+
+
+
+
 
 
 

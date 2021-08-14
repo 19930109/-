@@ -155,7 +155,7 @@ public class AllWeatherFragment extends ListFragment {
             SimpleDateFormat fmt2 = new SimpleDateFormat("yyyy年MM月dd日");
 
             time[0] = fmt2.format(date);
-            Log.d("昨日", time[0]);
+            Log.d("日付", time[0]);
         } catch (JSONException | ParseException e) {
             e.printStackTrace();
         }

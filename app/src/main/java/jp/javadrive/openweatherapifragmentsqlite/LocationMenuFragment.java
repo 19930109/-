@@ -27,16 +27,23 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.location.LocationServices;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 import java.util.Optional;
 
 // Fragmentクラスを継承します
-public class LocationMenuFragment extends Fragment implements LocationListener {
+public class LocationMenuFragment extends Fragment  {
 
-    private LocationManager mLocationManager;
-    private String bestProvider;
+    private FusedLocationProviderClient fusedLocationClient;
+
+    String locality;
 
     String areaname;
     double lat;
@@ -47,141 +54,100 @@ public class LocationMenuFragment extends Fragment implements LocationListener {
         return locationMenufragment;
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-
-        initLocationManager();
-        locationStart();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        locationStop();
-    }
-    private void initLocationManager() {
-        // インスタンス生成
-
-        mLocationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
-
-        // 詳細設定
-        Criteria criteria = new Criteria();
-        criteria.setAccuracy(Criteria.ACCURACY_FINE);
-        criteria.setPowerRequirement(Criteria.POWER_HIGH);
-        criteria.setSpeedRequired(false);
-        criteria.setAltitudeRequired(false);
-        criteria.setBearingRequired(false);
-        criteria.setCostAllowed(true);
-        criteria.setHorizontalAccuracy(Criteria.ACCURACY_HIGH);
-        criteria.setVerticalAccuracy(Criteria.ACCURACY_HIGH);
-        bestProvider = mLocationManager.getBestProvider(criteria, true);
-    }
-
-    private void checkPermission() {
-        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
-                && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // パーミッションの許可を取得する
-            ActivityCompat.requestPermissions(getActivity(),
-                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 1000);
+    /**
+     * 位置情報取得開始メソッド
+     */
+    private void startUpdateLocation() {
+        // 位置情報取得権限の確認
+        if(ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // 権限がない場合、許可ダイアログ表示
+            String[] permissions = {Manifest.permission.ACCESS_FINE_LOCATION};
+            ActivityCompat.requestPermissions(getActivity(), permissions, 2000);
+            return;
         }
+
+        // 位置情報の取得方法を設定
+        LocationRequest locationRequest = LocationRequest.create();
+        //locationRequest.setInterval(10000);       // 位置情報更新間隔の希望
+        //locationRequest.setFastestInterval(5000); // 位置情報更新間隔の最速値
+        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY); // この位置情報要求の優先度
+
+        fusedLocationClient.requestLocationUpdates(locationRequest,  new MyLocationCallback(), null);
     }
 
-    private void locationStart() {
-        checkPermission();
-        mLocationManager.requestLocationUpdates(bestProvider, 60000, 3, this);
-    }
 
-    private void locationStop() {
-        mLocationManager.removeUpdates(this);
-    }
-
-    @Override
-    public void onLocationChanged(Location location) {
-        Log.d("DEBUG", "called onLocationChanged");
-        Log.d("DEBUG", "lat : " + location.getLatitude());
-        Log.d("DEBUG", "lon : " + location.getLongitude());
-
-        lat = location.getLatitude();
-        lon = location.getLongitude();
-
-        final Handler handler = new Handler();
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-
-                List<Address> addresses = null;
-                try {
-                    Geocoder gcd = new Geocoder(getContext(), Locale.getDefault());
-                    addresses = gcd.getFromLocation(lat, lon, 1);
-                    if (addresses.size() > 0) {
-                        String ret = addresses.get(0).toString();
-                        Log.d("結果", ret);
-                        areaname = addresses.get(0).getAdminArea();
-                        Log.d("都道府県名", areaname);
-                        String locality = addresses.get(0).getLocality();
-                        Log.d("市町村名", locality);
-                        handler.post(new Runnable() {
-                            @RequiresApi(api = Build.VERSION_CODES.N)
-                            @Override
-                            public void run() {
-                        TextView locality1 = getView().findViewById(R.id.locality);
-                        locality1.setText("現在地は、\n" +
-                                areaname +  locality + "\nです。");
-                            }
-                        });
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
-                    Log.d("DEBUG", "失敗しました");
-                    String finalmessage = "位置情報取得に失敗しました";
-                    handler.post(new Runnable() {
-                        @RequiresApi(api = Build.VERSION_CODES.N)
-                        @Override
-                        public void run() {
-                            String finalMessage = finalmessage;
-                            Optional.ofNullable(getActivity())
-                                    .filter(activity -> activity instanceof LocalAreaWeekFragment.OnCurrentListener)
-                                    .map(activity -> (LocalAreaWeekFragment.OnCurrentListener) activity)
-                                    .orElseThrow(() -> new IllegalStateException("ActivityにOnListenerを実装してください"))
-                                    .onDaialog(finalMessage);
-                        }
-                    });
-                }
-
+    /**
+     * 位置情報受取コールバッククラス
+     */
+    private class MyLocationCallback extends LocationCallback {
+        @Override
+        public void onLocationResult(LocationResult locationResult) {
+            if (locationResult == null) {
+                return;
             }
-        }).start();
+            // 現在値を取得
+            Location location = locationResult.getLastLocation();
+
+           Log.v("結果","緯度:" + location.getLatitude() + " \n経度:" + location.getLongitude());
+
+
+            lat = location.getLatitude();
+            lon = location.getLongitude();
+
+            final Handler handler = new Handler();
+
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+
+                    List<Address> addresses = null;
+                    try {
+                        Geocoder gcd = new Geocoder(getContext(), Locale.getDefault());
+                        addresses = gcd.getFromLocation(lat, lon, 1);
+                        if (addresses.size() > 0) {
+                            String ret = addresses.get(0).toString();
+                            Log.d("結果", ret);
+                            areaname = addresses.get(0).getAdminArea();
+                            Log.d("都道府県名", areaname);
+                            locality = addresses.get(0).getLocality();
+                            Log.d("市町村名", locality);
+                            handler.post(new Runnable() {
+                                @RequiresApi(api = Build.VERSION_CODES.N)
+                                @Override
+                                public void run() {
+                                    TextView locality1 = getView().findViewById(R.id.locality);
+                                    locality1.setText("現在地は、\n" +
+                                            areaname +  locality + "\nです。");
+                                }
+                            });
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                        Log.d("DEBUG", "失敗しました");
+
+                    }
+
+                }
+            }).start();
+        };
     }
 
+    /**
+     * 許可ダイアログの結果受取
+     * @param requestCode
+     * @param permissions
+     * @param grantResults
+     */
     @Override
-    public void onStatusChanged(String provider, int status, Bundle extras) {
-        Log.d("DEBUG", "called onStatusChanged");
-        switch (status) {
-            case LocationProvider.AVAILABLE:
-                Log.d("DEBUG", "AVAILABLE");
-                break;
-            case LocationProvider.OUT_OF_SERVICE:
-                Log.d("DEBUG", "OUT_OF_SERVICE");
-                break;
-            case LocationProvider.TEMPORARILY_UNAVAILABLE:
-                Log.d("DEBUG", "TEMPORARILY_UNAVAILABLE");
-                break;
-            default:
-                Log.d("DEBUG", "DEFAULT");
-                break;
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == 2000 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            // 位置情報取得開始
+            startUpdateLocation();
         }
     }
 
-    @Override
-    public void onProviderDisabled(String provider) {
-        Log.d("DEBUG", "called onProviderDisabled");
-    }
 
-    @Override
-    public void onProviderEnabled(String provider) {
-        Log.d("DEBUG", "called onProviderEnabled");
-    }
 
     // FragmentのViewを生成して返す
     @Override
@@ -189,8 +155,19 @@ public class LocationMenuFragment extends Fragment implements LocationListener {
                              ViewGroup container,
                              Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_location,
+        View view = inflater.inflate(R.layout.fragment_location,
                 container, false);
+
+        //位置情報を取得していなければ、ダイアログを表示して、位置情報取得
+        if(locality == null) {
+            ((MainActivity) getActivity()).Test();
+            // LocationClientクラスのインスタンスを生成
+            fusedLocationClient = LocationServices.getFusedLocationProviderClient(this.getActivity());
+        }
+            // 位置情報取得開始
+            startUpdateLocation();
+
+        return view;
     }
 
     @Override
