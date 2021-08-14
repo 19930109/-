@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrays" >
+        <item>"全国の天気"</item>
+        <item>"北海道・東北の天気"</item>
+        <item>"関東の天気"</item>
+        <item>"中部の天気"</item>
+        <item>"関西の天気"</item>
+        <item>"中国の天気"</item>
+        <item>"四国の天気"</item>
+        <item>"九州・沖縄の天気"</item>
+
+    </string-array>
+
+</resources>
