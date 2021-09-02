@@ -1,0 +1,75 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="jp.javadrive.openweatherapifragmentsqlite"
+4    android:versionCode="3"
+5    android:versionName="1.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml
+10
+11    <!-- ネット接続を許可する -->
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:7:5-67
+13-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:7:22-64
+14
+15    <application
+15-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:9:5-26:19
+16        android:allowBackup="true"
+16-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:10:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.5.0] C:\Users\ochig\.gradle\caches\transforms-2\files-2.1\07adfc08fe16d3453ab9291511ec05fe\core-1.5.0\AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:11:9-43
+20        android:label="@string/app_name"
+20-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:12:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:14:9-35
+23        android:testOnly="true"
+24        android:theme="@style/Theme.OpenWeatherApiFragmentSQLite"
+24-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:16:9-66
+25        android:usesCleartextTraffic="true" >
+25-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:15:9-44
+26        <activity
+26-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:17:9-24:20
+27            android:name="jp.javadrive.openweatherapifragmentsqlite.MainActivity"
+27-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:17:19-47
+28            android:theme="@style/SplashTheme" >
+28-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:18:13-47
+29            <intent-filter>
+29-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:19:13-23:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:20:17-69
+30-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:20:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:22:17-77
+32-->C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\AndroidManifest.xml:22:27-74
+33            </intent-filter>
+34        </activity>
+35        <activity
+35-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\ochig\.gradle\caches\transforms-2\files-2.1\c2d84af3d0555f20e3dd99631e217ebb\play-services-base-17.5.0\AndroidManifest.xml:23:9-26:75
+36            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+36-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\ochig\.gradle\caches\transforms-2\files-2.1\c2d84af3d0555f20e3dd99631e217ebb\play-services-base-17.5.0\AndroidManifest.xml:24:13-79
+37            android:exported="false"
+37-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\ochig\.gradle\caches\transforms-2\files-2.1\c2d84af3d0555f20e3dd99631e217ebb\play-services-base-17.5.0\AndroidManifest.xml:25:13-37
+38            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+38-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\ochig\.gradle\caches\transforms-2\files-2.1\c2d84af3d0555f20e3dd99631e217ebb\play-services-base-17.5.0\AndroidManifest.xml:26:13-72
+39
+40        <meta-data
+40-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\ochig\.gradle\caches\transforms-2\files-2.1\dfe1840249491cac16d547804f1c912e\play-services-basement-17.5.0\AndroidManifest.xml:23:9-25:69
+41            android:name="com.google.android.gms.version"
+41-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\ochig\.gradle\caches\transforms-2\files-2.1\dfe1840249491cac16d547804f1c912e\play-services-basement-17.5.0\AndroidManifest.xml:24:13-58
+42            android:value="@integer/google_play_services_version" />
+42-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\ochig\.gradle\caches\transforms-2\files-2.1\dfe1840249491cac16d547804f1c912e\play-services-basement-17.5.0\AndroidManifest.xml:25:13-66
+43    </application>
+44
+45</manifest>

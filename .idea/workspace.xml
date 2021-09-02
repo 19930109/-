@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="586ba326-f423-43cb-95db-60da8efb8381" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/androidTest/java/jp/javadrive/openweatherapifragment/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/AllWeatherFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/AsyncHttpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/CalendarAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/DateManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/GPSLocationFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/HourAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/HourCellAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/ListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/LocalAreaCurrentFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/LocalAreaDataAllFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/LocalAreaDataFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/LocalAreaHourFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/LocalAreaParentFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/LocalAreaWeekFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/LocationMenuFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/MainFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/java/jp/javadrive/openweatherapifragment/Weatherday.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_01n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_02n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_03n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_04n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_10d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_10n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_11d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_11n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_13d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_13n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_1d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_2d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_3d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_4d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_50d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_50n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_9d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/_9n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/weather.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/drawable/weatherapi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/layout/calendar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/layout/custom_listview_weather.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/layout/custom_table_cell_weather.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/layout/custom_table_listview_weather.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/layout/fragment_all_weather.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/layout/fragment_local_current.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/layout/fragment_local_data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/layout/fragment_local_days.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/layout/fragment_local_hour.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/layout/fragment_local_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/layout/fragment_location.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/layout/fragment_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/values/arrays.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/release/res/values/google_maps_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/app/src/test/java/jp/javadrive/openweatherapifragment/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenWeatherApiFragment/settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\android-avd\Pixel_4_API_30.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="EXPORT_PRIVATE_KEY" value="false" />
+    <option name="KEY_STORE_PATH" value="C:\Users\ochig\OneDrive\デスクトップ\keyStore.jks" />
+    <option name="KEY_ALIAS" value="WeatherAPI" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1wHsHssIycA0TV2WMF59vWwnZ6P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="BundleExportedModule" value="OpenWeatherApiFragmentSQLite.app" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="VirtualDevicePath@C:\android-avd\Pixel_4_API_30.avd" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-08-06T00:14:00.284038700Z" />
+    <property name="ExportApk.ApkPath" value="C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jp.javadrive.openweatherapifragmentsqlite" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\res\values" />
+      <recent name="C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\res\drawable" />
+      <recent name="C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\res\layout" />
+      <recent name="C:\Users\ochig\AndroidStudioProjects\OpenWeatherApiFragmentSQLite\app\src\main\java\jp\javadrive\openweatherapifragmentsqlite" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="OpenWeatherApiFragmentSQLite.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="586ba326-f423-43cb-95db-60da8efb8381" name="Default Changelist" comment="" />
+      <created>1628126763907</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628126763907</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="892" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1628343015871">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="892" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1628343015871" />
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1628470788927">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1628470788927" />
+    <state x="499" y="164" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1628405394420">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="164" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.834@0.0.1536.834" timestamp="1628405394420" />
+    <state x="349" y="172" key="AndroidCreateResourceFileDialog" timestamp="1628468990216">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="349" y="172" key="AndroidCreateResourceFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1628468990216" />
+    <state x="624" y="203" key="AndroidCreateXmlResourceDialog" timestamp="1628127676801">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="624" y="203" key="AndroidCreateXmlResourceDialog/0.0.1536.834@0.0.1536.834" timestamp="1628127676801" />
+    <state x="902" y="118" key="FileChooserDialogImpl" timestamp="1628573351041">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="902" y="118" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1628573351041" />
+    <state width="1493" height="332" key="GridCell.Tab.0.bottom" timestamp="1628578663202">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="332" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1628578663202" />
+    <state width="1493" height="332" key="GridCell.Tab.0.center" timestamp="1628578663202">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="332" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1628578663202" />
+    <state width="1493" height="332" key="GridCell.Tab.0.left" timestamp="1628578663202">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="332" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1628578663202" />
+    <state width="1493" height="332" key="GridCell.Tab.0.right" timestamp="1628578663202">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="332" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1628578663202" />
+    <state x="277" y="62" key="SettingsEditor" timestamp="1628578660133">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1628578660133" />
+    <state x="938" y="177" key="refactoring.ChangeSignatureDialog" timestamp="1628237397383">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="938" y="177" key="refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834" timestamp="1628237397383" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1628237782168">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1628237782168" />
+  </component>
+</project>

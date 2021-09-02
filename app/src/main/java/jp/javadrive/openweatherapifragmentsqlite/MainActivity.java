@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements LocalAreaDataFrag
             // コードからFragmentを追加
 
             // Fragmentを作成します
-            MainFragment fragment1 = new MainFragment();
+            MainFragment fragment2 = new MainFragment();
 
             FragmentManager fragmentManager = getSupportFragmentManager();
             // Fragmentの追加や削除といった変更を行う際は、Transactionを利用します
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements LocalAreaDataFrag
             // 新しく追加を行うのでaddを使用します
             // 他にも、よく使う操作で、replace removeといったメソッドがあります
             // メソッドの1つ目の引数は対象のViewGroupのID、2つ目の引数は追加するfragment
-            transaction.replace(R.id.container, fragment1.newInstance());
+            transaction.replace(R.id.container, fragment2.newInstance());
 
             // 最後にcommitを使用することで変更を反映します
             transaction.commit();
